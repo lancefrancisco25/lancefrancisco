@@ -3,7 +3,7 @@ import Image from 'next/image'
 import PopUpImage from '../../mat-ui/ui-comp/PopUpImage'
 import bglenikiko from '../../public/lenikiko bg.png'
 import {useState, useRef, useEffect} from "react";
-import Contact from "../../Components/Keep Contact/Contact"
+import Contact from '../../Components/Keep Contact/Contact'
 import Header from "../../Components/Header/header"
 
 function LeniKiko(){

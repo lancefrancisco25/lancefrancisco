@@ -1,0 +1,150 @@
+.globalStyle{
+    --inputHeight: 1.4375em;
+}
+
+.rootInactive{
+    --inputColorMain: rgba(0,0,0,.38);
+    --inputColorSecond: rgba(0, 0, 0, 0.6);
+    --borderWeight: 1px;
+}
+
+.rootActive{
+    --inputColorMain: #458DEC;
+    --inputColorSecond: rgba(0, 0, 0, 0.6);
+    --borderWeight: 2px;
+}
+
+.rootError{
+    --inputColorMain: #BE0000;
+    --inputColorSecond: #be0000;
+}
+
+.disabledCss{
+    --inputColorMain: rgba(0, 0, 0, 0.377);
+    --inputColorSecond: rgba(0, 0, 0, 0.377);
+    --inputColorText: rgba(0, 0, 0, 0.377);
+    --borderWeight: 1px;
+}
+
+.matUiInput{
+    width:100%;
+    position: relative;
+    margin-top: 6px;
+}
+
+.matUiinputCont{
+    width:100%;
+    position: relative;
+    height: fit-content
+}
+
+.matUiInputWTrailIcon{
+    padding: 16.5px 48px 16.5px 14px !important;
+}
+
+.matUiInput input{
+    cursor: pointer;
+    width: -webkit-fill-available;
+    height: var(--inputHeight);
+    padding: 16.5px 15px;
+    margin: 0;
+    box-sizing: content-box;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    background: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--inputColorText,#000000);
+}
+
+.matUiInputBorderCont{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    inset: -6px 0 0 0;
+    padding: 0 0 0 6px;
+    border-radius: 6px;
+    border: var(--borderWeight) solid var(--inputColorMain);
+    background: transparent;
+}
+
+.matUiInputLabel{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transition: 0.15s;
+    font-size: 1rem;
+    transform-origin: left;
+    color: var(--inputColorSecond);
+}
+
+.matUiInputSpanSeparator{
+    padding: 0 4px;
+    visibility: hidden;
+    font-size: 0.75em;
+    display: inline-block;
+}
+
+.matUiInputLegendCont{
+    height: 12px;
+}
+
+.matUiInputLowerMargin{
+    padding: 3px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.matUiHelperText{
+    font-size: 14px;
+    color: var(--inputColorSecond);
+    margin-right: auto;
+}
+
+.matUiCharCount{
+    font-size: 14px;
+    color: var(--inputColorSecond);
+    margin-left: auto;
+}
+
+.matUiInputTrailingIcon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    left: initial;
+    display: flex;
+    right: 7%;
+}
+
+.selectContSel{
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    width: 100%;
+    top: 120%;
+    height: fit-content;
+    z-index: 10000;
+    line-height: 1.2;
+    transition: 0.25s;
+    transform-origin: top;
+}
+
+.selectContSel div{
+    padding: 6px 10px;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.selectContSel div:hover{
+    background: #f1f1f1;
+}
+
+.selectContSelHoverDiv{
+    background: #e8f2ff;
+}

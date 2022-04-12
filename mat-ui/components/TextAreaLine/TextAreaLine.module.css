@@ -1,0 +1,156 @@
+.mainRootInput{
+    --inputColorSecond: rgba(0, 0, 0, 0.6);
+    --inputHeight: 1.6em;
+}
+
+.rootInactive{
+    --inputColorMain: rgb(0, 0, 0);
+    --borderWeight: 1px;
+    --inputRippleDeactive: rgba(0, 0, 0, 0.308);
+}
+
+.rootActive{
+    --inputRippleActive: #458DEC;
+    --inputColorMain: #458DEC;
+    --inputBgColor: #ececec; 
+    --borderWeight: 2px;
+}
+
+.rootError{
+    --inputColorMain: #BE0000;
+    --inputColorSecond: #be0000;
+    --inputRippleActive: #BE0000;
+    --inputRippleDeactive: #be0000;
+
+}
+
+.disabledCss{
+    --inputColorMain: rgba(0, 0, 0, 0.377);
+    --inputColorSecond: rgba(0, 0, 0, 0.377);
+    --inputColorText: rgba(0, 0, 0, 0.377);
+    --borderWeight: 1px;
+}
+
+.matUiInput{
+    width:100%;
+    position: relative;
+    margin-top: 6px;
+}
+
+.matUiinputCont{
+    width:100%;
+    position: relative;
+}
+
+.matUiInputWTrailIcon{
+    padding: 16.5px 48px 16.5px 14px !important;
+}
+
+.textAreaMargin{
+    padding: 16.5px 0 5px;
+    background: none;
+    height: fit-content;
+    display: flex;
+}
+
+.textAreaMargin textarea{
+    width: 100%;
+    height: var(--inputHeight);
+    margin: 0;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    background: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--inputColorText,#000000);
+    resize: none;
+}
+
+.matUiInputBorderCont{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: transparent;
+    border-bottom: 1px var(--inputRippleDeactive) solid;
+    border-radius: 6px 6px 0 0;
+}
+
+.matUiInputLineRripple{
+    background-color: var(--inputRippleActive);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transform: scaleX(0);
+    transition: 0.2s;
+}
+
+.matUiInputCenterBorder{
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 5px;
+    pointer-events: none;
+    position: relative;
+}
+
+.matUiInputCenterBorder div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.matUiInputLabel{
+    font-size: 14px;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0, -50%);
+    transition: 0.15s;
+    color: var(--inputColorMain);
+    font-weight: 400;
+    transform-origin: left;
+}
+
+.matUiInputLowerMargin{
+    display: flex;
+    justify-content: space-between;
+}
+
+.matUiHelperText{
+    font-size: 14px;
+    color: var(--inputColorSecond);
+    margin-right: auto;
+}
+
+.matUiCharCount{
+    font-size: 14px;
+    color: var(--inputColorSecond);
+    margin-left: auto;
+}
+
+.matUiInputTrailingIcon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    left: initial;
+    z-index: 1;
+    right: 16px
+}
+
+.matUiInputLeadingIcon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    right: initial;
+    left: 16px;
+    z-index: 1;
+}

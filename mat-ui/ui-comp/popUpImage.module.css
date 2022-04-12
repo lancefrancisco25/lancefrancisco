@@ -1,0 +1,51 @@
+.imagePreview{
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    opacity: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.38);
+    z-index: 2;
+}
+
+.imagePreview img{
+    opacity:0;
+}
+
+.divClone img{
+    width: 70%;
+    max-width: 700px;
+    height: 70%;
+    max-height: 500px;
+    object-position: center;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.imageTempMove{
+    display: none;
+}
+
+.divClone{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transition: left 0.3s, top 0.3s, width 0.3s, height 0.3s, opacity 0.15s;
+    transition-timing-function: cubic-bezier(.59,1.39,.25,1.01);
+    z-index: 3;
+}
+
+.divCloneImage{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
