@@ -1,0 +1,146 @@
+.globalStyle{
+    --inputHeight: 2em;
+}
+
+.rootInactive{
+    --inputColorMain: rgba(0,0,0,.38);
+    --inputColorSecond: rgba(0, 0, 0, 0.6);
+    --borderWeight: 1px;
+}
+
+.rootActive{
+    --inputColorMain: #458DEC;
+    --inputColorSecond: rgba(0, 0, 0, 0.6);
+    --borderWeight: 2px;
+}
+
+.rootError{
+    --inputColorMain: #BE0000;
+    --inputColorSecond: #be0000;
+}
+
+.disabledCss{
+    --inputColorMain: rgba(0, 0, 0, 0.377);
+    --inputColorSecond: rgba(0, 0, 0, 0.377);
+    --inputColorText: rgba(0, 0, 0, 0.377);
+    --borderWeight: 1px;
+}
+
+.dropDownCont{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 15px;
+    box-shadow: 0px 0px 11px 1px #00000033;
+    border-radius: 6px;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.25s;
+    transform-origin: top;
+    z-index: 999;
+    background-color: #ffffff;
+}
+
+.outerCont{
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    cursor: text;
+}
+
+.input{
+    border: 0;
+    outline: none;
+    width: 100%;
+    flex: 1;
+    height: 100%;
+    box-sizing: content-box;
+    font-size: 16px;
+    flex: 1;
+    background: transparent;
+    min-width: 50px;
+    height: 30px;
+}
+
+.itemDropdown{
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.itemDropdownSelected{
+    background: #F2F8FF;
+}
+
+.itemDropdown:hover{
+    background: #f1f1f1;
+    cursor: pointer;
+}
+
+.pillElement{
+    width: fit-content;
+    flex-shrink: 0;
+    background: #F2F8FF;
+    color: #1A73E8;
+    font-weight: 500;
+    padding: 4px 7px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    height: 100%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.pillOnSelect{
+    border: 2px #1A73E8 solid;
+}
+
+.formContPills{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding: 14px 15px;
+    min-height: var(--inputHeight);
+    max-height: fit-content;
+    box-sizing: content-box;
+    padding: 10.5px;
+    flex-wrap: wrap;
+}
+
+.matUiInputBorderCont{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    inset: -6px 0 0 0;
+    padding: 0 0 0 6px;
+    border-radius: 6px;
+    border: var(--borderWeight) solid var(--inputColorMain);
+    background: transparent;
+}
+
+.matUiInputLegendCont{
+    height: 12px;
+}
+
+.matUiInputSpanSeparator{
+    padding: 0 4px;
+    visibility: hidden;
+    font-size: 0.75em;
+    display: inline-block;
+}
+
+.matUiInputLabel{
+    position: absolute;
+    left: 12px;
+    top: 49%;
+    transition: 0.15s;
+    font-size: 1rem;
+    transform-origin: left;
+    color: var(--inputColorSecond);
+}
